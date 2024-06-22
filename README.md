@@ -1,6 +1,6 @@
 # LPM_Segmentator
 
-# LPM_Segmentator: deep learning to segment lumbar paraspinal muscle on multi-national MRI with curated datasets 
+### Deep learning to segment lumbar paraspinal muscle on multi-national MRI with curated datasets 
 
 Welcome to our GitHub repository for the DL-LPM method, an automated deep-learning (DL) system for segmenting lumbar paraspinal muscles (LPM) on MRI scans. The DL-based LPM segmentator can segment lumbar earator spine and multifidues on T1 weighted, T2 weighted, Dixon water, and Dixon fat MRI.
 
