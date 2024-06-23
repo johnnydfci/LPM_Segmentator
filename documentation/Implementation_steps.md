@@ -1,6 +1,6 @@
 # nnU-Net model for lumbar paraspinal muscle segmentation
 
-A nnU-Net model is developed using this repository [https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1](https://github.com/MIC-DKFZ/nnUNet). The nnU-Net of LPM segmentator was implemented on Linux (Ubuntu 18.04) with an RTX 3060 GPU (12GB VRAM). 
+The nnU-Net of LPM segmentator was implemented on Linux (Ubuntu 18.04) with an RTX 3060 GPU (12GB VRAM). A nnU-Net model is developed using this repository [https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1](https://github.com/MIC-DKFZ/nnUNet). 
 
 ### Environment setup
 
