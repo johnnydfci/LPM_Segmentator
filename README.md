@@ -10,13 +10,11 @@ LPM_Segmentator can automatically segment the lumbar erector spinae and multifid
 
 1. Slice selection of L1/L2 to L5/S1 intervertebral disc by manual annoation in CSV file.
   
-2. nnU-Net model training for LPM segmentation: [Implementation_steps.md](documentation/Implementation_steps.md)
+2. nnU-Net model inference for LPM segmentation: [Implementation_steps.md](documentation/Implementation_steps.md)
 
-3. nnU-Net model inference for LPM segmentation: [Implementation_steps.md](documentation/Implementation_steps.md)
+3. Post-process of predicted mask by largest component analysis: [230402_github_Figure_S5_cofusion_matrix_95CI.ipynb](stats_to_figure/230402_github_Figure_S5_cofusion_matrix_95CI.ipynb)  
 
-4. Post-process of predicted mask by largest component analysis: [230402_github_Figure_S5_cofusion_matrix_95CI.ipynb](stats_to_figure/230402_github_Figure_S5_cofusion_matrix_95CI.ipynb)  
-
-5. Segmentation accuracy calculation: ```dir: stats_to_figure/ ```
+4. Segmentation accuracy calculation: ```dir: stats_to_figure/ ```
 
 LPM segmentator was developed and externally validated on a total of xxx MRI images from five datasets. Curated MRI images and LPM segmentations can be freely downloaded from Google Drive or Baidu Wangpan (link TBD).
 
