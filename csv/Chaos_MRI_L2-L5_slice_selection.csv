@@ -1,4 +1,4 @@
-,CT_id,slice_start,slice_stop,img_shape_z,img_shape_xy,img_spacing_x,img_spacing_y,img_spacing_z
+,pid,slice_start,slice_stop,img_shape_z,img_shape_xy,img_spacing_x,img_spacing_y,img_spacing_z
 0,10_T1DUAL_DICOM_anon_InPhase_img,0,15,55,485,1,1,5
 0,10_T1DUAL_DICOM_anon_OutPhase_img,0,25,50,256,1.89453125,1.89453125,5.5
 0,10_T2SPIR_DICOM_anon_img,0,21,36,256,1.69921875,1.69921875,7.69999980926514
