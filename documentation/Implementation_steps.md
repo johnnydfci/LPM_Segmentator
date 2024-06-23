@@ -4,7 +4,7 @@ The nnU-Net of LPM segmentator was implemented on Linux (Ubuntu 18.04) with an R
 
 ### Environment setup
 
-```conda create -n lipa python=3.8.5``` # create a conda environment with python3.8.5; ```conda remove -n lipa --all ```if you want to delete this conda environment. 'lipa' stands for liver parenchymal
+```conda create -n lpm python=3.8.5``` # create a conda environment with python3.8.5; ```conda remove -n lpm --all ```if you want to delete this conda environment. 'lpm' stands for lumbar paraspinal muscle
 
 ```conda activate lpm```  # activate the conda environment
 
