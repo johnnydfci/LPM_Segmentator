@@ -30,11 +30,11 @@ The nnU-Net of LPM segmentator was implemented on Linux (Ubuntu 18.04) with an R
  
  ### nnU-Net Scripts to Segment Test Images of Lumbar MRI
  
- ```nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii_raw/ ``` # Download data into the dir, images are stored in our repository as an example
+ ```nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii_raw/ ``` # Download your data into the dir, our images are stored in our repository as an example
  
  ```file_op_to_infer_by_nnunet.ipynb```  # Prepare the test data into the required format using the Jupyter notebook, to make image filenames end with '0000.nii.gz'
  
-  ```nnUNet_trained_models/ ``` #  Download the pre-trained model from Google Drive or Baidu Wangpan ```Files_for_running_github/nnUNet_trained_models.zip``` dir. The required paths are shown in this [screenshot.png](Pre_trained_model_paths.png)
+  ```nnUNet_trained_models/ ``` #  Download the pre-trained model from Google Drive https://drive.google.com/file/d/1rQnBHTOlbW9yA86Xjf7PLMHpxKn0W2Ze/view?usp=drive_link ```Files_for_running_github/nnUNet_trained_models.zip``` dir. The required paths are shown in this [screenshot.png](Pre_trained_model_paths.png)
    
  ```nnUNet_predict -i $nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii/ -o  $nnUNet_raw_data_base/nnUNet_test_data/test_seg_in_nii_raw/ -t 515 -m 3d_fullres -f 1```  # Run nnU-Net prediction to segment test images. This command uses the first fold of the five-fold cross-validation model (fold 1)
   
