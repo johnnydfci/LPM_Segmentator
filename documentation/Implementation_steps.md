@@ -34,7 +34,7 @@ The nnU-Net of LPM segmentator was implemented on Linux (Ubuntu 18.04) with an R
  
  ```file_op_to_infer_by_nnunet.ipynb```  # Prepare the test data into the required format using the Jupyter notebook, to make image filenames end with '0000.nii.gz'
  
-  ```nnUNet_trained_models/ ``` #  Download the pre-trained model from Google Drive https://drive.google.com/file/d/1rQnBHTOlbW9yA86Xjf7PLMHpxKn0W2Ze/view?usp=drive_link ```nnUNet_trained_models.zip``` dir. 
+  ```nnUNet_trained_models/ ``` #  Download the pre-trained model from Google Drive https://drive.google.com/file/d/1rQnBHTOlbW9yA86Xjf7PLMHpxKn0W2Ze/view?usp=drive_link ```nnUNet_trained_models.zip``` dir.  Required paths are shown in this [screenshot.png](File_paths_of_trained_models.png)
    
  ```nnUNet_predict -i $nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii/ -o  $nnUNet_raw_data_base/nnUNet_test_data/test_seg_in_nii_raw/ -t 515 -m 3d_fullres -f 1 -tr nnUNetTrainerV2_noMirroring  --disable_tta ```  # Run nnU-Net prediction to segment test images. This command uses the first fold of the five-fold cross-validation model (fold 1)
   
