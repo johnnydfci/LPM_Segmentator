@@ -28,20 +28,20 @@ The nnU-Net of LPM segmentator was implemented on Linux (Ubuntu 18.04) with an R
                 export nnUNet_preprocessed="/home/zhongyi/Desktop/nn-unet_train/nnUNet_preprocessed"
                 export RESULTS_FOLDER="/home/zhongyi/Desktop/nn-unet_train/nnUNet_trained_models"                ```                
  
- ### nnunet scripts to segment test images of lumbar MRI 
+ ### nnU-Net Scripts to Segment Test Images of Lumbar MRI
  
- ```nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii_raw/ ``` # download open-source data into the dir, one image is stored in our repository as an example
+ ```nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii_raw/ ``` # Download data into the dir, images are stored in our repository as an example
  
- ```file_op_to_infer_by_nnunet.ipynb```  # prepare data into the required format, where each nifty image name has to end with '0000.nii.gz'
+ ```file_op_to_infer_by_nnunet.ipynb```  # Prepare the test data into the required format using the Jupyter notebook, to make image filenames end with '0000.nii.gz'
  
-  ```nnUNet_trained_models/ ``` # download pre-trained model from Gdrive or baiduwangpan ```Files_for_running_github/nnUNet_trained_models.zip``` dir. The required paths are shown in this [screenshot.png](Pre_trained_model_paths.png)
+  ```nnUNet_trained_models/ ``` #  Download the pre-trained model from Google Drive or Baidu Wangpan ```Files_for_running_github/nnUNet_trained_models.zip``` dir. The required paths are shown in this [screenshot.png](Pre_trained_model_paths.png)
    
- ```nnUNet_predict -i $nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii/ -o  $nnUNet_raw_data_base/nnUNet_test_data/test_seg_in_nii_raw/ -t 515 -m 3d_fullres -f 1```  # nnunet predict, the '1' stands for the trained model of 1st fold of the five-fold cross validation
+ ```nnUNet_predict -i $nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii/ -o  $nnUNet_raw_data_base/nnUNet_test_data/test_seg_in_nii_raw/ -t 515 -m 3d_fullres -f 1```  # Run nnU-Net prediction to segment test images. This command uses the first fold of the five-fold cross-validation model (fold 1)
   
 
-### -optional: training your own model 
+### Optional: Training Your Own Model
 
--  ```  nnUNet_raw_data_base/nnUNet_train_data_raw/ ``` # download training data into the dir.  ```Files_for_running_github/nnUNet_train_data_raw.zip``` dir. Required paths are shown in this [screenshot.png](Images_paths_for_training.png)
+-  ```  nnUNet_raw_data_base/nnUNet_train_data_raw/ ``` # Download the training data into the directory  ```Files_for_running_github/nnUNet_train_data_raw.zip``` dir. Required paths are shown in this [screenshot.png](Images_paths_for_training.png)
 
 -  ``` file_op_to_prepare_training_nnunet.ipynb```  #  prepare data into the required format of nnunet: 1/2 step
 
