@@ -1,4 +1,4 @@
-,CT_id,slice_start,slice_stop,img_shape_z,img_shape_xy,img_spacing_x,img_spacing_y,img_spacing_z
+,pid,slice_start,slice_stop,img_shape_z,img_shape_xy,img_spacing_x,img_spacing_y,img_spacing_z
 0,01_water_img,0,28,63,400,1.0184999704361,1.0184999704361,4
 0,02_water_img,6,34,63,400,1.0184999704361,1.0184999704361,4
 0,03_water_img,18,48,63,400,1.0184999704361,1.0184999704361,4
