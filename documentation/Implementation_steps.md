@@ -19,24 +19,24 @@ The nnU-Net of LPM segmentator was implemented on Linux (Ubuntu 18.04) with an R
  ### nnunet paths setup 
  
  -  set nnunet environment path, replace the following with your own user name and repo dir
- -  suppose user name is 'zhongyi' and repo dir is '/home/zhongyi/Desktop/nn-unet_train'
+ -  suppose user name is 'zhongyi' and repo dir is '/home/zhongyi/Documents/GitHub/LPM_Segmentator'
 
                 ```
-                cd /home/zhongyi/.bashrc     
+                cd    
                        
-                export nnUNet_raw_data_base="/home/zhongyi/Desktop/nn-unet_train/nnUNet_raw_data_base"
-                export nnUNet_preprocessed="/home/zhongyi/Desktop/nn-unet_train/nnUNet_preprocessed"
-                export RESULTS_FOLDER="/home/zhongyi/Desktop/nn-unet_train/nnUNet_trained_models"                ```                
+                export nnUNet_raw_data_base="/home/zhongyi/Desktop/gu-project/github_test/nnUNet_raw_data_base"
+                export nnUNet_preprocessed="/home/zhongyi/Desktop/gu-project/github_test/nnUNet_preprocessed"
+                export RESULTS_FOLDER="/home/zhongyi/Desktop/gu-project/github_test/nnUNet_trained_models"                ```                
  
  ### nnU-Net Scripts to Segment Test Images of Lumbar MRI
  
- ```nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii_raw/ ``` # Download data into the dir, images are stored in our repository as an example
+ ```nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii_raw/ ``` # Download your data into the dir, our images are stored in our repository as an example
  
  ```file_op_to_infer_by_nnunet.ipynb```  # Prepare the test data into the required format using the Jupyter notebook, to make image filenames end with '0000.nii.gz'
  
-  ```nnUNet_trained_models/ ``` #  Download the pre-trained model from Google Drive or Baidu Wangpan ```Files_for_running_github/nnUNet_trained_models.zip``` dir. The required paths are shown in this [screenshot.png](Pre_trained_model_paths.png)
+  ```nnUNet_trained_models/ ``` #  Download the pre-trained model from Google Drive https://drive.google.com/file/d/1rQnBHTOlbW9yA86Xjf7PLMHpxKn0W2Ze/view?usp=drive_link ```nnUNet_trained_models.zip``` dir. 
    
- ```nnUNet_predict -i $nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii/ -o  $nnUNet_raw_data_base/nnUNet_test_data/test_seg_in_nii_raw/ -t 515 -m 3d_fullres -f 1```  # Run nnU-Net prediction to segment test images. This command uses the first fold of the five-fold cross-validation model (fold 1)
+ ```nnUNet_predict -i $nnUNet_raw_data_base/nnUNet_test_data/test_img_in_nii/ -o  $nnUNet_raw_data_base/nnUNet_test_data/test_seg_in_nii_raw/ -t 515 -m 3d_fullres -f 1 -tr nnUNetTrainerV2_noMirroring  --disable_tta ```  # Run nnU-Net prediction to segment test images. This command uses the first fold of the five-fold cross-validation model (fold 1)
   
 
 ### Optional: Training Your Own Model
