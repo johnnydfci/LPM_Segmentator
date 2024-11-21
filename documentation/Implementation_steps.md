@@ -19,14 +19,14 @@ The nnU-Net of LPM segmentator was implemented on Linux (Ubuntu 18.04) with an R
  ### nnunet paths setup 
  
  -  set nnunet environment path, replace the following with your own user name and repo dir
- -  suppose user name is 'zhongyi' and repo dir is '/home/zhongyi/Desktop/nn-unet_train'
+ -  suppose user name is 'zhongyi' and repo dir is '/home/zhongyi/Documents/GitHub/LPM_Segmentator'
 
                 ```
-                cd /home/zhongyi/.bashrc     
+                cd    
                        
-                export nnUNet_raw_data_base="/home/zhongyi/Desktop/nn-unet_train/nnUNet_raw_data_base"
-                export nnUNet_preprocessed="/home/zhongyi/Desktop/nn-unet_train/nnUNet_preprocessed"
-                export RESULTS_FOLDER="/home/zhongyi/Desktop/nn-unet_train/nnUNet_trained_models"                ```                
+                export nnUNet_raw_data_base="/home/zhongyi/Documents/GitHub/LPM_Segmentator/nnUNet_raw_data_base"
+                export nnUNet_preprocessed="/home/zhongyi/Documents/GitHub/LPM_Segmentator/nnUNet_preprocessed"
+                export RESULTS_FOLDER="/home/zhongyi/Documents/GitHub/LPM_Segmentator/nnUNet_trained_models"                ```                
  
  ### nnU-Net Scripts to Segment Test Images of Lumbar MRI
  
