@@ -49,5 +49,5 @@ The nnU-Net of LPM segmentator was implemented on Linux (Ubuntu 18.04) with an R
 
 -   ```python  nnunet/experiment_planning/nnUNet_plan_and_preprocess.py -t 515 --verify_dataset_integrity```    # pre-process the data using nnunet scripts
              
--   ```nnUNet_train 3d_fullres nnUNetTrainerV2 515 1```  # nnunet training, the '1' stands for training 1st fold of the five-fold cross validation
+-   ```nnUNet_train 3d_fullres nnUNetTrainerV2_noMirroring 515 1```  # nnunet training, the '1' stands for training 1st fold of the five-fold cross validation
 
