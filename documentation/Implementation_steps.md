@@ -19,7 +19,7 @@ The nnU-Net of LPM segmentator was implemented on Linux (Ubuntu 18.04) with an R
  ### nnunet paths setup 
  
  -  set nnunet environment path, replace the following with your own user name and repo dir
- -  suppose user name is 'zhongyi' and repo dir is '/home/zhongyi/Documents/GitHub/LPM_Segmentator'
+ -  suppose user name is 'zhongyi' and repo dir is '/home/zhongyi/Desktop/gu-project/github_test'
 
                 ```
                 cd    
