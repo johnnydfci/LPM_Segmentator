@@ -35,8 +35,13 @@ LPM_Segmentator can automatically segment the lumbar erector spinae and multifid
 3. **Post-Processing**: Apply largest component analysis to refine the predicted mask.  
    Refer to: [LPM_seg_curated_into_top1_mask.ipynb](LPM_seg_curated_into_top1_mask.ipynb)  
 
-4. **Accuracy Evaluation**: Calculate segmentation accuracy using DSC metrics.  
-   Refer to: [LPM_seg_accuracy_evluate_in_DSC.ipynb](LPM_seg_accuracy_evluate_in_DSC.ipynb)  
+4. **Segmentation Accuracy Evaluation**: Calculate segmentation accuracy using DSC metrics.  
+   Refer to: [LPM_seg_accuracy_evluate_in_DSC.ipynb](LPM_seg_accuracy_evluate_in_DSC.ipynb)
+   
+5. **Muscle Volume Statistical Evaluation**: Calculate muscle volume based on automated and manual segmenation.  
+   Refer to: [LPM_seg_to_vol_2csv.ipynb](LPM_seg_to_vol_2csv.ipynb)
+6. **Fatty ratio Evaluation**: Calculate fatty ratio based on segmentation of dixon water and fat images.  
+   Refer to: [LPM_seg_to_fat_ratio_2csv.ipynb](LPM_seg_to_fat_ratio_2csv.ipynb)  
 
 LPM_Segmentator has been developed and externally validated on 1,301 MRIs from five datasets.  
 
