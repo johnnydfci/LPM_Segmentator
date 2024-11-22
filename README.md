@@ -1,6 +1,24 @@
 # LPM_Segmentator
 
+<p align="center">
+  <img src="documentation/graphical_abstract.jpg" alt="Graphical Abstract" width="600">
+</p>
+
 Welcome to the LPM_Segmentator repository! This automated deep-learning (DL) pipeline enables segmentation of lumbar paraspinal muscles (LPM) on MRI scans.
+
+## Method Introduction
+
+LPM_Segmentator can automatically segment the lumbar erector spinae and multifidus muscles on T1-weighted, T2-weighted, Dixon water, and Dixon fat MRI scans. This approach significantly enhances muscle health assessment, aiding in the clinical management of low back pain.
+
+## Implementation Steps
+
+1. **Slice Selection**: Manually annotate the L1/L2 to L5/S1 intervertebral disc slices in a CSV file.  
+   Refer to: [img_intercept_L2-L5_github.ipynb](img_intercept_L2-L5_github.ipynb)  
+
+2. **Model Inference**: Use the nnU-Net model for LPM segmentation.  
+   Refer to: [Implementation_steps.md](documentation/Implementation_steps.md)  
+
+3. **Post-Processing**: Apply largest component analysis to refine
 
 ## Method Introduction
 
