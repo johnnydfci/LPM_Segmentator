@@ -8,7 +8,7 @@ Welcome to the LPM_Segmentator repository! This automated deep-learning (DL) pip
 
 ## Method Introduction
 
-LPM_Segmentator can automatically segment the lumbar erector spinae and multifidus muscles on T1-weighted, T2-weighted, Dixon water, and Dixon fat MRI scans. This approach significantly enhances muscle health assessment, aiding in the clinical management of low back pain.
+LPM_Segmentator can automatically segment the lumbar erector spinae and multifidus muscles on T1-weighted, T2-weighted, Dixon water, and Dixon fat MRI scans. This approach significantly enhances muscle health assessment, aiding in the clinical management of low back pain. We collect 1,302 MRIs from 641 participants across five imaging centers. Images from two centers were used for algorithm development, while data from the remaining three centers used for external validation. 
 
 ## Implementation Steps
 
@@ -41,9 +41,9 @@ LPM_Segmentator can automatically segment the lumbar erector spinae and multifid
 5. **Muscle Volume Statistical Evaluation**: Calculate muscle volume based on automated and manual segmenation.  
    Refer to: [LPM_seg_to_vol_2csv.ipynb](LPM_seg_to_vol_2csv.ipynb)
 6. **Fatty ratio Evaluation**: Calculate fatty ratio based on segmentation of dixon water and fat images.  
-   Refer to: [LPM_seg_to_fat_ratio_2csv.ipynb](LPM_seg_to_fat_ratio_2csv.ipynb)  
+   Refer to: [LPM_seg_to_fat_ratio_2csv.ipynb](LPM_seg_to_fat_ratio_2csv.ipynb)
 
-LPM_Segmentator has been developed and externally validated on 1,301 MRIs from five datasets.  
+
 
 ## Model Download
 
