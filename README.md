@@ -49,6 +49,13 @@ The trained nnU-Net model is available for download from Google Drive:
 
 ---
 
+## Data Download
+
+The curated MyoSegmenTUM spine dataset, including 54 Dixon fat images and 54 Dixon water images, is available for download from Google Drive:
+[Download data](https://drive.google.com/file/d/1ESqzjEMm8GoZDNKcQe6NJCTeNP54dYj3/view?usp=drive_link)
+
+---
+
 ## License
 
 This project is licensed under the **Apache License, Version 2.0**.  
