@@ -49,6 +49,17 @@ The trained nnU-Net model is available for download from Google Drive:
 
 ---
 
+## Data Download
+
+The curated MyoSegmenTUM spine dataset, including 54 Dixon fat images and 54 Dixon water images, is available for download from Google Drive:
+[Download data](https://drive.google.com/file/d/1ESqzjEMm8GoZDNKcQe6NJCTeNP54dYj3/view?usp=drive_link)
+
+Acknowledgment
+
+The Dixon MRI images provided in this dataset originate from the study "Lumbar muscle and vertebral bodies segmentation of chemical shift encoding-based water-fat MRI: the reference database MyoSegmenTUM spine" (Burian et al.). The original dataset includes combined segmentations of the left and right lumbar erector spinae (LES) and multifidus (MF) muscles. In this release, we provide manual segmentations of the left and right LES and MF as separate classes, enabling more granular analysis and the development of automated segmentation algorithms
+
+---
+
 ## License
 
 This project is licensed under the **Apache License, Version 2.0**.  
