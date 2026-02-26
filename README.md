@@ -69,4 +69,4 @@ Refer to the [LICENSE](LICENSE) file for details.
 
 ## Publication
 
-Details of the associated publication will be updated soon.
+Zhang Z, Hides JA, De Martino E, Millner J, Tuxworth G. Multicenter validation of automated segmentation and composition analysis of lumbar paraspinal muscles using multisequence MRI. Radiol Artif Intell. Published online August 20, 2025. doi:10.1148/ryai.240833
